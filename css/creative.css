@@ -147,12 +147,22 @@ header.masthead {
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url("../img/header.jpg");
-  background-position: center;
+  background-image: url("../img/mast.png");
+  background-position: -20px -15px;
+  background-blend-mode: lighten;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  #main-mast {
+    background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		min-height: 100vh;
+		position: relative;
+		text-align: center;
+		z-index: 21;
+
+  }
   header.masthead .header-content {
     position: relative;
     width: 100%;
