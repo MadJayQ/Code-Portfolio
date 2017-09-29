@@ -14,13 +14,13 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #F05F40; }
+  border-color: #a121aa; }
 
 hr.light {
   border-color: white; }
 
 a {
-  color: #F05F40;
+  color: #a121aa;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
@@ -87,7 +87,7 @@ body {
   #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: #F05F40;
+    color: #a121aa;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #f05f40; }
@@ -140,15 +140,31 @@ body {
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #F05F40; } }
-
+.bg-blur {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("../img/mast.png");
+  background-position: -20px 10px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
 header.masthead {
   position: relative;
   width: 100%;
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url("../img/mast.png");
-  background-position: -20px -15px;
   background-blend-mode: lighten;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -161,7 +177,6 @@ header.masthead {
 		position: relative;
 		text-align: center;
 		z-index: 21;
-
   }
   header.masthead .header-content {
     position: relative;
@@ -309,7 +324,7 @@ header.masthead {
 .btn-primary {
   color: white;
   border-color: #F05F40;
-  background-color: #F05F40; }
+  background-color: #a121aa; }
   .btn-primary.focus, .btn-primary:focus {
     color: white;
     border-color: #a4270d;
